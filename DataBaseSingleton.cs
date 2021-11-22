@@ -28,8 +28,7 @@ namespace Singleton
 
         public static DataBaseSingleton GetSingleton()
         {
-            DataBaseSingleton dataBase = Instance;
-            return dataBase;
+            return Instance;
         }
     }
 }

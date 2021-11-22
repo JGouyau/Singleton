@@ -13,9 +13,11 @@ namespace Singleton.Class
         string stringDeux { get; set; }
         string stringTrois { get; set; }
 
+        DataBaseSingleton DataBase { get;  }
+
         public Class2()
         {
-            var Database = DataBaseSingleton.GetSingleton();
+            DataBase = DataBaseSingleton.GetSingleton();
         }
     }
 }

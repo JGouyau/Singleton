@@ -14,12 +14,14 @@ namespace Singleton.Class
         int valeurDeux { get; set; }
         int valeurTrois { get; set; }
 
+        DataBaseSingleton DataBase { get; }
+
         public Class1()
         {
-            var Database = DataBaseSingleton.GetSingleton();
+            DataBase = DataBaseSingleton.GetSingleton();
         }
 
-        
+
 
 
     }
